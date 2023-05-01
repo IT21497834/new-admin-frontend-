@@ -167,7 +167,7 @@ const AdminDashboard = () => {
 
               </div>
 
-              <div className='addcus'>
+              <div className='addcus'><br/>
                     <Link className='btn btn-primary' to="/add">
                       Add Customer
                     </Link>
@@ -204,11 +204,11 @@ const AdminDashboard = () => {
                       }).map((user,index)=>(
                           <tr>
                             <th scope="row" key={index}>{index+1}</th>
-                            <td>{user.name}</td>
-                            <td>{user.password}</td>
-                            <td>{user.email}</td>
-                            <td>{user.address}</td>
-                            <td>{user.mobile}</td>
+                            <td style={{textAlign:"center"}}>{user.name}</td>
+                            <td style={{textAlign:"center"}}>{user.password}</td>
+                            <td style={{textAlign:"center"}}>{user.email}</td>
+                            <td style={{textAlign:"center"}}>{user.address}</td>
+                            <td style={{textAlign:"center"}}>{user.mobile}</td>
                             <td>
                               {/* <button className="btn btn-primary mx-2">View</button> */}
                               <Link className="btn btn-primary mx-2"
@@ -216,7 +216,7 @@ const AdminDashboard = () => {
 
                                 View</Link>
 
-                              <Link className="btn btn-outline-primary mx-2"
+                              <Link className="btn btn-success mx-2"
                                     to={`/edit/${user.id}`}
                               >Edit</Link>
 
