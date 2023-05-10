@@ -14,7 +14,7 @@ import { GoSignOut } from "react-icons/go";
 import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 
-const AdminDashboard = () => {
+const AdminDashboardHD = () => {
 
   const func = () => {
     // let toggle = document.querySelector(".toggle");
@@ -253,4 +253,4 @@ const AdminDashboard = () => {
   )
 }
 
-export default AdminDashboard
+export default AdminDashboardHD
